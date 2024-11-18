@@ -1,44 +1,47 @@
-# IoT Temperature & Humidity Sensor with Web Server (Raspberry Pi Pico W)
+#Temperature and Humidity Measurement with DHT22 and Raspberry Pi Pico W
+Introduction
+This project involves measuring temperature and humidity using a DHT22 sensor connected to a Raspberry Pi Pico W. The data pin of the DHT22 is connected to GPIO22 on the Pico W.
 
-This project is an implementation of an IoT temperature and humidity sensor using a **DHT22 sensor** connected to a **Raspberry Pi Pico W (2022)**. The device reads temperature and humidity data and hosts a simple web server to serve the data as JSON over a Wi-Fi network.
+Components Needed
+Raspberry Pi Pico W
+DHT22 Sensor
+Breadboard (optional)
+Jumper Wires
+10 kΩ Resistor (pull-up resistor)
+Wiring Diagram
+Connect the DHT22 sensor to the Raspberry Pi Pico W as follows:
 
-## Table of Contents
+VCC (DHT22) → 3.3V (Pico W)
+Data (DHT22) → GPIO22 (Pico W)
+GND (DHT22) → GND (Pico W)
+Add a 10 kΩ pull-up resistor between the Data line and VCC.
 
-- [Project Overview](#project-overview)
-- [Hardware Requirements](#hardware-requirements)
-- [Software Requirements](#software-requirements)
-- [Code Explanation](#code-explanation)
-  - [1. Wi-Fi Connection](#1-wi-fi-connection)
-  - [2. DHT22 Sensor Initialization](#2-dht22-sensor-initialization)
-  - [3. HTTP Server Setup](#3-http-server-setup)
-  - [4. Data Response Format](#4-data-response-format)
-- [How to Use](#how-to-use)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
+Code
+Use the following MicroPython code to read data from the DHT22 sensor:
 
-## Project Overview
+ 
+Steps to Follow
+Set Up the Hardware:
 
-This project enables a **Raspberry Pi Pico W (2022)** to connect to a Wi-Fi network, read temperature and humidity data from a **DHT22 sensor**, and serve this data through a simple HTTP web server. The sensor data is provided in JSON format, which can be accessed via any web browser or API client.
+Connect the DHT22 sensor to the Pico W according to the wiring diagram.
+Install MicroPython on Pico W:
 
-The main functionality is:
-1. **Connect** to Wi-Fi.
-2. **Read** temperature and humidity data from the DHT22 sensor.
-3. **Serve** this data over an HTTP server.
+If not already installed, flash MicroPython firmware onto your Pico W.
+Set Up Thonny IDE:
 
-## Hardware Requirements
+Download and install Thonny from thonny.org.
+In Thonny, select MicroPython (Raspberry Pi Pico) as the interpreter.
+Upload the Code:
 
-- **Microcontroller**: Raspberry Pi Pico W (2022)
-- **DHT22 Sensor**: For temperature and humidity measurements
-- **Breadboard and Jumper Wires**: For wiring the sensor
-- **LED (Optional)**: For visual feedback when the device is connected to Wi-Fi
+Copy the provided code into Thonny.
+Save the script to the Pico W as main.py.
+Run the Script:
 
-## Software Requirements
-
-- **MicroPython**: A Python implementation for microcontrollers. You can download it from [here](https://micropython.org/download/rp2-pico-w/).
-- **Thonny IDE** (or any other suitable MicroPython IDE): For uploading and running the script.
-
-## Code Explanation
-
-### 1. Wi-Fi Connection
-
-The Raspberry Pi Pico W connects to a Wi
+Click the Run button in Thonny to execute the script.
+Monitor the temperature and humidity readings in the console.
+Notes
+Pull-Up Resistor: Ensure the 10 kΩ resistor is connected between the Data pin and VCC for reliable communication.
+Sensor Reading Interval: Do not read the sensor more frequently than once every 2 seconds to prevent inaccurate readings.
+Module Availability: The dht module should be included in your MicroPython firmware. Update the firmware if necessary.
+Conclusion
+By following these steps, you can successfully measure temperature and humidity using a DHT22 sensor connected to a Raspberry Pi Pico W via GPIO22. This simple project serves as a foundation for more advanced applications like environmental monitoring or IoT systems.
