@@ -27,7 +27,7 @@ Connect the DHT22 sensor to the Pico W according to the wiring diagram.
 
 [actual setup](https://github.com/mrsoheilnezakat/Raspberry_pi_pico_w_dht22/blob/main_branch/image/actual%20setup.jpeg)
 
-[diagram](https://github.com/mrsoheilnezakat/Raspberry_pi_pico_w_dht22/blob/main_branch/image/diagram.png))
+[diagram](https://github.com/mrsoheilnezakat/Raspberry_pi_pico_w_dht22/blob/main_branch/image/diagram.png)
 
 Install MicroPython on Pico W:
 
