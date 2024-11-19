@@ -29,7 +29,7 @@ Connect the DHT22 sensor to the Pico W according to the wiring diagram.
 
 [diagram](https://github.com/mrsoheilnezakat/Raspberry_pi_pico_w_dht22/blob/main_branch/image/diagram.png)
 
-### Install MicroPython on Pico W:
+### Install MicroPython on Pico W and setup script:
 
 1. Flash pico-w by holding the button on pico and connect it to RPi or workstation running thonny. A storage device should be available on your devic.
 2. Copy the downloaded micropython into storage and the device automatically get restarted. (always download from raspberry pi "latest and specifically for your microcontroller")
