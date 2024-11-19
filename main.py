@@ -4,8 +4,9 @@ import network
 import dht
 import socket
 
-name = "Soheil iPhone"
-password = "Solo1990"
+# ssid and pass
+name = "****"
+password = "****"
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
