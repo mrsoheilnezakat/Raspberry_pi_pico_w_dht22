@@ -1,4 +1,4 @@
-#Temperature and Humidity Measurement with DHT22 and Raspberry Pi Pico W
+# Temperature and Humidity Measurement with DHT22 and Raspberry Pi Pico W
 Introduction
 This project involves measuring temperature and humidity using a DHT22 sensor connected to a Raspberry Pi Pico W. The data pin of the DHT22 is connected to GPIO22 on the Pico W.
 
