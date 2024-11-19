@@ -15,8 +15,10 @@ This project involves measuring temperature and humidity using a DHT22 sensor co
 3. GND (DHT22) → GND (Pico W)
 **optional** Add a 10 kΩ pull-up resistor between the Data line and VCC.
 
-Code
+Code:
+
 Use the following MicroPython code to read data from the DHT22 sensor:
+
 [python script](https://github.com/mrsoheilnezakat/Raspberry_pi_pico_w_dht22/blob/main_branch/main.py)
  
 Steps to Follow
