@@ -59,7 +59,6 @@ try:
         print('client connected from:', addr)
         request = cl.recv(1024)
         temp,humi=measure()
-        time
         response = ("HTTP/1.1 200 ok\r\nContent-Type: application/json\r\n\r\n"
                     f'{{"temp": {temp}, "humi": {humi}}}'
                     )
